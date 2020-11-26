@@ -19,6 +19,7 @@ import Params, * as historyActions from './../state/actions/history';
 interface Props {
     history: any;
     historyData: HistoryInitState;
+
     saveHistory(para: Params): void;
 }
 
@@ -106,15 +107,11 @@ class Index extends React.PureComponent<Props, State> {
             loading
         } = this.state;
 
-        return loading ? (
+        return (
             <div className={styles.text}>
-                接口请求中...
+                {loading ? `接口请求中...` : `${count} 秒后发送请求`}
             </div>
-        ) : (
-            <div className={styles.text}>
-                {count} 秒后发送请求
-            </div>
-        )
+        );
     }
 
     render() {
