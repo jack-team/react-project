@@ -37,7 +37,7 @@ class History extends React.PureComponent<Props> {
                         endTime,
                         jsonData
                     } = item;
-                    
+
                     return (
                         <div key={item.id} className={styles.item}>
                             <div className={styles.header}>

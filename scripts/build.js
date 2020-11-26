@@ -25,6 +25,14 @@ webpackConfig.plugins.push(
     })
 );
 
+webpackConfig.plugins.push(
+    new webpack.DefinePlugin({
+        __DEV__: false
+    })
+);
+
+webpackConfig.output.publicPath = `./`;
+
 webpackConfig.plugins.push(pointError);
 
 webpackConfig.plugins.push(

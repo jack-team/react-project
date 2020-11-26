@@ -10,6 +10,12 @@ const stats = {
 
 webpackConfig.mode = `development`;
 
+webpackConfig.plugins.push(
+    new webpack.DefinePlugin({
+        __DEV__: true
+    })
+)
+
 const serverConfig = {
     hot: true,
     open: true,

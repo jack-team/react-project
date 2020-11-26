@@ -1,7 +1,8 @@
 import React from 'react';
 
 import {
-    BrowserRouter as Router
+    HashRouter,
+    BrowserRouter
 } from 'react-router-dom';
 
 import {
@@ -21,6 +22,8 @@ import Store, {
 } from './state';
 
 import BaseRoutes from './router';
+
+const Router:any = __DEV__ ? BrowserRouter : HashRouter;
 
 const App = () => {
     return (

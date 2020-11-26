@@ -6,3 +6,5 @@ declare module '*.gif';
 declare module '*.bmp';
 declare module '*.tiff';
 declare module '*.scss';
+
+declare var __DEV__: boolean;
