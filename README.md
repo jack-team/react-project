@@ -13,6 +13,8 @@
 
 ### ``npm run test`` 或者 ``yarn run test``
 
+4.dist 文件夹下的index.html可以直接打开查看页面效果
+
 
 
 
